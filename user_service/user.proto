@@ -30,3 +30,8 @@ message GetAllUserResponse{
     repeated User user = 1;
     int64 count = 2;
 }
+
+
+message Checker {
+    bool check = 1;
+}
