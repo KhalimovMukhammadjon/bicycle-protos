@@ -12,7 +12,7 @@ service UserService{
     rpc GetAll(GetAllUserRequest) returns(GetAllUserResponse);
     rpc Delete(PrimaryKey) returns(google.protobuf.Empty);
     rpc Update(PrimaryKey) returns(google.protobuf.Empty);
-    rpc PhoneChecker(User)returns(Checker);
+    rpc PhoneChecker(PhoneNumber)returns(Checker);
 }
 
 

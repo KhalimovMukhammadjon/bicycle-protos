@@ -35,3 +35,7 @@ message GetAllUserResponse{
 message Checker {
     bool check = 1;
 }
+
+message PhoneNumber{
+    string phone_number = 1;
+}
