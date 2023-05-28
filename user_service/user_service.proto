@@ -13,6 +13,9 @@ service UserService{
     rpc Delete(PrimaryKey) returns(google.protobuf.Empty);
     rpc Update(PrimaryKey) returns(google.protobuf.Empty);
     rpc PhoneChecker(PhoneNumber)returns(Checker);
+
+    rpc Login(LoginRequest) returns (LoginResponse) {}
+    rpc Register(CreateUserRequest) returns (RegisterResponse) {}
 }
 
 

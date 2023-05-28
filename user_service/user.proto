@@ -39,3 +39,17 @@ message Checker {
 message PhoneNumber{
     string phone_number = 1;
 }
+
+// login request
+message LoginRequest {
+    string phone_number = 1;
+}
+
+message LoginResponse {
+    int64 user_id = 1;
+}
+
+// create user request (response)
+message RegisterResponse {
+    int64 user_id = 1;
+}
