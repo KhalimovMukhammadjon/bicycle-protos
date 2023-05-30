@@ -20,11 +20,15 @@ message PrimaryKeyProduct{
 
 message GetAllProductRequest{
     string search = 1;
-    int64 offset = 2;
+    int32 offset = 2;
     int32 limit = 3;
 }
 
 message GetAllProductResponse{
     repeated Product product = 1;
     int64 count = 2;
+}
+
+message UpdateProductRequest {
+    Product product = 1;
 }

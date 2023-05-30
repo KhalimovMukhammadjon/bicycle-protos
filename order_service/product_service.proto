@@ -11,5 +11,5 @@ service ProductService{
     rpc GetById(PrimaryKeyProduct) returns(Product);
     rpc GetAll(GetAllProductRequest) returns(GetAllProductResponse);
     rpc Delete(PrimaryKeyProduct) returns(google.protobuf.Empty);
-    rpc Update(PrimaryKeyProduct) returns(google.protobuf.Empty);
+    rpc Update(UpdateProductRequest) returns(google.protobuf.Empty);
 }
