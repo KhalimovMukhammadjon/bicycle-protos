@@ -24,6 +24,7 @@ message GetAllUserRequest{
     string search = 1;
     int64 page = 2;
     int32 offset = 3;
+    int32 limit = 4;
 }
 
 message GetAllUserResponse{
